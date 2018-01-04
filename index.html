@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Magnet Fun</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Header -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Magnet Fun</h1>
+        </div>
+      </div>
+      <!-- Instruction Line 1 -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Click To Try To Unscrammble A Word or Click to Scrammble Your Own Word</h3>
+        </div>
+      </div>
+      <!-- Instruction Line 2 -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Drag the letters around to figure out the correct word</h3>
+        </div>
+      </div>
+      <!-- Word Input -->
+      <div class="row">
+        <div class="col-xs-12">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="word" placeholder="Enter word">
+              <button type="submit" id="ownWord" class="btn">I Want To Scramble A Word</button>
+              <button type="submit" id="generateWord" class="btn">Give Me A Word To Unscrammble</button>
+              <button type="submit" id="reset" class="btn">Start Over</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Letters -->
+      <div class="row">
+        <div id="letterDivs" class="col-xs-12">
+          <!-- letter divs here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/js/index.js"></script>
+  </body>
+</html>
