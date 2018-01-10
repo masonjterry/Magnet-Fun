@@ -20,6 +20,14 @@ $(document).ready(function() {
 
     scrammble(randomWord);
 
+    $("#answer").on("click", function(e) {
+      e.preventDefault();
+
+
+
+      $("#answer-display").text("The answer is: " + randomWord);
+    });
+
   });
 
   $("#ownWord").on("click", function(e) {
