@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     reset();
 
-    scrammble(randomWord);
+    scramble(randomWord);
 
     $("#answer").on("click", function(e) {
       e.preventDefault();
@@ -38,11 +38,11 @@ $(document).ready(function() {
 
     reset();
 
-    scrammble(userWord);
+    scramble(userWord);
 
   });
 
-  function scrammble(word) {
+  function scramble(word) {
 
     // jummbled word
     let newWordArr = [];
