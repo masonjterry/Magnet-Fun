@@ -5,11 +5,15 @@ $(document).ready(function() {
   function reset() {
     let newDiv = $("<div></div>").text("");
     $("#letterDivs").html(newDiv);
+    $("#answer-display").text("");
   }
 
   $("#generateWord").on("click", function(e){
 
     e.preventDefault();
+
+    $("#answer-display").text("");
+
 
     // word array
     let wordArr = ["javascript", "react", "angular", "node", "bootstrap", "computer", "laptop"];
@@ -33,6 +37,8 @@ $(document).ready(function() {
   $("#ownWord").on("click", function(e) {
 
     e.preventDefault();
+
+    $("#answer-display").text("");
 
     let userWord = $("#word").val().trim();
 
